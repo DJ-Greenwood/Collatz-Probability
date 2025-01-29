@@ -1,0 +1,32 @@
+\documentclass[12pt]{extarticle} % Change 12pt to your desired font size
+\usepackage{amsmath}
+\usepackage{times} % This line changes the font to Times New Roman
+
+\title{A Probabilistic Analysis of the Collatz Conjecture}
+\author{Denzil James Greenwood}
+\date{January 27, 2025}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper presents a novel analysis of the Collatz conjecture through probabilistic methods. What emerges is a framework that not only explains the statistical inevitability of convergence but also provides calculable upper bounds on convergence time. This approach combines deterministic steps with probabilistic analysis, offering a robust explanation for why all sequences appear to eventually reach the \{16, 8, 4, 2, 1\} cycle.
+
+We consider that a funnel may exist that all sequences must pass through, which guarantees convergence to the \{16, 8, 4, 2, 1\} cycle. This funnel is defined by the powers of 2 encountered in the sequence, and once a sequence reaches a power of 2, it follows a deterministic path to convergence.
+
+This paper is structured as follows: Section 1 provides an introduction to the Collatz conjecture and the basic function that generates the sequences. Section 2 introduces the probabilistic framework used to analyze the conjecture, including the distribution of even and odd numbers and the transition probabilities between them. Section 3 presents a modified two-step analysis, focusing on the behavior of even and odd numbers. Section 4 derives the expected convergence time and provides an upper bound for it. Section 5 offers an example analysis of the sequence starting from \( n = 7 \). Section 6 discusses the statistical descent and the improbability of infinite growth. Section 7 explores the distribution of convergence times. Finally, Section 8 summarizes the key findings and outlines potential directions for future research.
+\end{abstract}
+
+\input{idea/section 1.tex}
+\input{idea/section 2.tex}
+\input{idea/section 3.tex}
+\input{idea/section 3.1.tex}
+\input{idea/Section 4.tex}
+\input{idea/Section 5.tex}
+\input{idea/Section 6.tex}
+
+\end{document}
+
+
+
