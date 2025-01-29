@@ -120,7 +120,7 @@ class CollatzAnalyzerGPU:
 if __name__ == "__main__":
     analyzer = CollatzAnalyzerGPU(chunk_size=500, use_gpu=True)
     start = mpz(2) ** 1+1
-    end = mpz(2) ** 100+1
+    end = mpz(2) ** 2+1
     numbers = [start + i for i in range(end)]
     
     results, transition_counts, convergence_times = analyzer.analyze_collatz_phases(numbers)
